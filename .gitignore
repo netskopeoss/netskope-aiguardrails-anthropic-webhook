@@ -1,0 +1,26 @@
+# Secrets and local config
+.env
+anthropic-setup.txt
+*.pem
+*.key
+
+# Terraform state and build output (local state is the default; it holds secrets)
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/*.tfplan
+terraform/build/
+terraform/crash.log
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# The nested DLPoD webhook is its own git repository
+dlpod-appliance-webhook-terraform/
+
+# Windows and Office temp files, local Claude settings
+desktop.ini
+~$*
+.claude/
