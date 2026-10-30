@@ -98,7 +98,7 @@ headers), frame text extraction, the AI Guardrails client, and handler status co
 
 - **Request size.** API Gateway caps request bodies at 10 MB. The protocol
   allows up to 64 MiB. Larger prompts hit the fail mode.
-- **Appliance activation** is a manual, Beta process. Until it is done the
+- **Appliance activation** is a manual. Until it is done the
   evaluation endpoint does not answer. The webhook's `/healthz` still responds.
 - **Certificate expiry.** The self-signed ALB cert is valid for one year from the first apply. Renewal is not automated yet. Plan it before the expiry date.
 - **Cold starts.** The first request after an idle period can be slow. Measure
